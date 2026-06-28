@@ -1,123 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deekshitha | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Deekshitha P — AI & Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header class="header">
-        <div class="hero-badge">💻 Computer Science Engineering Student</div>
-        <h1>Hi, I'm Deekshitha</h1>
-        <p>Full-stack & AI enthusiast building intelligent, real-world web applications.</p>
-        <div class="hero-dots">
-            <div class="hero-dot"></div>
-            <div class="hero-dot"></div>
-            <div class="hero-dot"></div>
-        </div>
-    </header>
-    <div class="container">
-        <section class="card">
-            <div class="card-head">
-                <div class="ibox ib-p">👤</div>
-                <h2>About Me</h2>
-            </div>
-            <p class="about-text">
-                I'm an engineering student focused on full-stack development and applied AI.
-                I recently completed a 2-week AI & GPU Computing internship covering machine
-                learning fundamentals, CNNs, Transformers, LLM fine-tuning, and GPU optimization —
-                and used those skills to build <strong>MedScan AI</strong>, a full-stack
-                AI-powered medical report analyzer.
-            </p>
-        </section>
 
-        <section class="card">
-            <div class="card-head">
-                <div class="ibox ib-b">✨</div>
-                <h2>Skills</h2>
-            </div>
-            <ul class="skills-grid">
-                <li class="skill-item">HTML &amp; CSS</li>
-                <li class="skill-item">JavaScript</li>
-                <li class="skill-item py">Python</li>
-                <li class="skill-item py">FastAPI</li>
-                <li class="skill-item">SQLAlchemy</li>
-                <li class="skill-item">MySQL</li>
-                <li class="skill-item">JWT &amp; bcrypt Auth</li>
-                <li class="skill-item">REST API Design</li>
-                <li class="skill-item">PyTorch</li>
-                <li class="skill-item">Hugging Face</li>
-                <li class="skill-item">Groq / LLaMA APIs</li>
-                <li class="skill-item">Prompt Engineering</li>
-                <li class="skill-item">CNNs &amp; Grad-CAM</li>
-                <li class="skill-item">Transformers &amp; LoRA</li>
-                <li class="skill-item">Data Structures</li>
-                <li class="skill-item git">Git &amp; GitHub</li>
-            </ul>
-        </section>
+<div class="bg-blobs">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+</div>
 
-        <section class="card">
-            <div class="card-head">
-                <div class="ibox ib-pk">📁</div>
-                <h2>Projects</h2>
-            </div>
-            <div class="projects">
-                <div class="project">
-                    <h3>🏥 MedScan AI</h3>
-                    <p>Full-stack AI-powered medical report analyzer. Doctors can register patients,
-                    upload X-rays / scans / PDF reports, and receive instant AI-generated clinical
-                    and patient-friendly summaries. Features JWT authentication, role-based access
-                    (Admin/Doctor/Staff), and per-user data isolation.</p>
-                    <div>
-                        <span class="tech-badge">FastAPI</span>
-                        <span class="tech-badge">MySQL</span>
-                        <span class="tech-badge">SQLAlchemy</span>
-                        <span class="tech-badge">JWT</span>
-                        <span class="tech-badge">Groq AI</span>
-                        <span class="tech-badge">JavaScript</span>
-                    </div>
-                    <a class="gh-link" href="https://github.com/Deeksha-039/medscan-ai" target="_blank">
-                        🔗 View on GitHub
-                    </a>
-                </div>
+<div class="cursor-glow" id="cursorGlow"></div>
 
-                <div class="project">
-                    <h3>Portfolio Website</h3>
-                    <p>Personal portfolio website built using HTML and CSS to showcase skills and projects.</p>
-                    <div>
-                        <span class="tech-badge">HTML</span>
-                        <span class="tech-badge">CSS</span>
-                    </div>
-                    <a class="gh-link" href="https://github.com/Deeksha-039" target="_blank">
-                        🔗 View on GitHub
-                    </a>
-                </div>
-            </div>
-        </section>
+<nav id="navbar">
+  <span class="nav-logo">dp<span class="dot">✦</span>dev</span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:deekshitha.p039@gmail.com" class="nav-cta">Hire me ✦</a>
+</nav>
 
-        <section class="card">
-            <div class="card-head">
-                <div class="ibox ib-m">✉️</div>
-                <h2>Contact</h2>
-            </div>
-            <div class="contact-list">
-                <a class="contact-row" href="mailto:deekshitha.p039@gmail.com">
-                    <span>Email</span> deekshitha.p039@gmail.com
-                </a>
-                <a class="contact-row" href="https://github.com/Deeksha-039" target="_blank">
-                    <span>GitHub</span> github.com/Deeksha-039
-                </a>
-                <a class="contact-row" href="https://www.linkedin.com/in/deekshitha-p-826456339" target="_blank">
-                    <span>LinkedIn</span> linkedin.com/in/deekshitha-p-826456339
-                </a>
-            </div>
-        </section>
+<div class="hero">
+  <div class="hero-left">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Open to internship opportunities
     </div>
-    <footer class="footer">
-        <p>© 2026 <strong>Deekshitha</strong> — Built with passion</p>
-    </footer>
+    <h1 class="hero-title">
+      <span class="line1">Hey there, I'm</span>
+      <span class="line2 hero-name">Deekshitha</span>
+      <span class="line3 hero-role">AI <span class="amp">&</span> Full-Stack Developer</span>
+    </h1>
+    <p class="hero-sub">I'm a Computer Science student from Bengaluru who genuinely enjoys building things — whether that's a FastAPI backend, an AI pipeline, or a product that solves a real problem. I love turning ideas into working software.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">See my work ↓</a>
+      <a href="#contact" class="btn btn-ghost">Say hello</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><span class="hstat-num">3rd</span><span class="hstat-label">Year, B.Tech CSE</span></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><span class="hstat-num">15d</span><span class="hstat-label">NVIDIA Internship</span></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><span class="hstat-num">2×</span><span class="hstat-label">SQL Certified</span></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-card">
+      <div class="hero-card-glow"></div>
+      <div class="hero-avatar">
+        <div class="avatar-ring"></div>
+        <div class="avatar-inner">✦</div>
+      </div>
+      <p class="hero-card-name">Deekshitha P</p>
+      <p class="hero-card-role-text">AI & Full-Stack Developer</p>
+      <div class="hero-card-tags">
+        <span class="htag">FastAPI</span>
+        <span class="htag">LLaMA</span>
+        <span class="htag">PyTorch</span>
+        <span class="htag">MySQL</span>
+      </div>
+      <div class="hero-card-links">
+        <a href="https://github.com/Deeksha-039" target="_blank" class="hlink">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/deekshitha-p-826456339" target="_blank" class="hlink">LinkedIn ↗</a>
+      </div>
+    </div>
+    <div class="float-badge fb1">🤖 AI</div>
+    <div class="float-badge fb2">⚡ FastAPI</div>
+    <div class="float-badge fb3">🧠 ML</div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="section-inner">
+    <div class="section-tag">01 — About me</div>
+    <h2>A little about me</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm currently in my third year of B.Tech in Computer Science at Presidency University, Bengaluru. My interest sits right at the crossroads of <strong>AI and full-stack engineering</strong> — I find it exciting when something you build actually thinks alongside the user.</p>
+        <br>
+        <p>Earlier this year, I completed a 15-day intensive AI & GPU Computing internship with <strong>NVIDIA × Presidency University</strong>, where I got hands-on with CNNs, Transformers, LoRA fine-tuning, and GPU-accelerated workloads. The capstone of that internship was <strong>MedScan AI</strong> — a product I'm genuinely proud of — a full-stack medical report analyzer where doctors can upload X-rays and PDFs and receive AI-generated clinical summaries in seconds.</p>
+        <br>
+        <p>Outside of code, I'm curious about how things work, enjoy learning by building, and am always looking for the next problem worth solving.</p>
+      </div>
+      <div class="about-cards">
+        <div class="acard reveal-item">
+          <div class="acard-icon">🎓</div>
+          <div><p class="acard-title">Education</p><p class="acard-sub">B.Tech CSE · Presidency University, Bengaluru</p></div>
+        </div>
+        <div class="acard reveal-item">
+          <div class="acard-icon">💼</div>
+          <div><p class="acard-title">Latest Experience</p><p class="acard-sub">AI & GPU Computing Intern · NVIDIA × Presidency University</p></div>
+        </div>
+        <div class="acard reveal-item">
+          <div class="acard-icon">📍</div>
+          <div><p class="acard-title">Based in</p><p class="acard-sub">Bengaluru, India</p></div>
+        </div>
+        <div class="acard reveal-item">
+          <div class="acard-icon">🎯</div>
+          <div><p class="acard-title">Currently looking for</p><p class="acard-sub">Internships in Software Dev, ML, or AI</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="alt-section">
+  <div class="section-inner">
+    <div class="section-tag">02 — Skills</div>
+    <h2>Tools I actually use</h2>
+    <div class="skills-groups">
+      <div class="skill-group reveal-item">
+        <p class="sg-title">Languages</p>
+        <div class="skill-tags">
+          <span class="stag">Python</span><span class="stag">C</span><span class="stag">SQL</span>
+          <span class="stag">JavaScript</span><span class="stag">HTML</span><span class="stag">CSS</span>
+        </div>
+      </div>
+      <div class="skill-group reveal-item">
+        <p class="sg-title">AI / ML</p>
+        <div class="skill-tags">
+          <span class="stag accent">PyTorch</span><span class="stag accent">HuggingFace</span>
+          <span class="stag accent">Groq API</span><span class="stag accent">LLaMA</span>
+          <span class="stag accent">CNNs</span><span class="stag accent">LoRA</span><span class="stag accent">NLP</span>
+        </div>
+      </div>
+      <div class="skill-group reveal-item">
+        <p class="sg-title">Backend</p>
+        <div class="skill-tags">
+          <span class="stag">FastAPI</span><span class="stag">SQLAlchemy</span>
+          <span class="stag">MySQL</span><span class="stag">JWT / bcrypt</span>
+          <span class="stag">REST APIs</span><span class="stag">pdfplumber</span>
+        </div>
+      </div>
+      <div class="skill-group reveal-item">
+        <p class="sg-title">Tools & Workflow</p>
+        <div class="skill-tags">
+          <span class="stag">Git</span><span class="stag">GitHub</span>
+          <span class="stag">VS Code</span><span class="stag">Uvicorn</span><span class="stag">Streamlit</span>
+        </div>
+      </div>
+      <div class="skill-group reveal-item">
+        <p class="sg-title">CS Fundamentals</p>
+        <div class="skill-tags">
+          <span class="stag">Data Structures</span><span class="stag">DBMS</span>
+          <span class="stag">Operating Systems</span><span class="stag">Discrete Maths</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-tag">03 — Projects</div>
+    <h2>What I've built</h2>
+    <div class="project-card spotlight-card reveal-item">
+      <div class="spotlight-glow"></div>
+      <div class="project-top">
+        <div>
+          <span class="project-badge">✦ Featured Project</span>
+          <h3 class="project-title">MedScan AI</h3>
+        </div>
+        <a class="project-gh" href="https://github.com/Deeksha-039/medscan-ai" target="_blank">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          View on GitHub ↗
+        </a>
+      </div>
+      <p class="project-desc">MedScan AI came out of my NVIDIA internship capstone — and it's the project I'm most proud of. It's a full-stack application where doctors can register patients, upload medical documents (X-rays, scans, or PDF reports), and instantly receive AI-generated clinical summaries along with patient-friendly explanations. I built the entire backend from scratch using FastAPI and MySQL, implemented JWT-based authentication with role-based access for Admins, Doctors, and Staff, and integrated LLaMA via Groq API to power the AI layer. Every user's data is fully isolated — it's production-ready architecture, not just a demo.</p>
+      <div class="project-techs">
+        <span class="ptag">FastAPI</span><span class="ptag">MySQL</span><span class="ptag">SQLAlchemy</span>
+        <span class="ptag">Groq API</span><span class="ptag">LLaMA</span><span class="ptag">pdfplumber</span>
+        <span class="ptag">JWT / bcrypt</span><span class="ptag">JavaScript</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="alt-section">
+  <div class="section-inner">
+    <div class="section-tag">04 — Experience</div>
+    <h2>Where I've worked</h2>
+    <div class="exp-card reveal-item">
+      <div class="exp-left">
+        <div class="exp-dot"></div>
+        <div class="exp-line"></div>
+      </div>
+      <div class="exp-right">
+        <div class="exp-header">
+          <div>
+            <p class="exp-role">AI & GPU Computing Intern</p>
+            <p class="exp-org">NVIDIA × Presidency University</p>
+          </div>
+          <span class="exp-duration">15 Days · 2025</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Went through an intensive hands-on program covering PyTorch, CNNs, Transformers, LoRA fine-tuning, and GPU-accelerated computing — concepts I immediately applied in real projects</li>
+          <li>Led the development of MedScan AI as the team's capstone — a production-grade medical report analyzer powered by FastAPI, Groq API, and LLaMA, with full auth and role-based access control</li>
+          <li>Presented the final product through a structured 15-slide walkthrough covering architecture, design decisions, and a live demo</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certs">
+  <div class="section-inner">
+    <div class="section-tag">05 — Certifications</div>
+    <h2>Things I've earned</h2>
+    <div class="cert-grid">
+      <div class="cert-card reveal-item">
+        <div class="cert-top"><span class="cert-issuer">HackerRank</span><span class="cert-status done">✓ Completed</span></div>
+        <p class="cert-name">SQL (Basic)</p>
+        <p class="cert-date">Jun 2026 · ID: 970DAC19F950</p>
+      </div>
+      <div class="cert-card reveal-item">
+        <div class="cert-top"><span class="cert-issuer">HackerRank</span><span class="cert-status done">✓ Completed</span></div>
+        <p class="cert-name">SQL (Intermediate)</p>
+        <p class="cert-date">2026  . ID:D40C77124CDA</p>
+      </div>
+      <div class="cert-card reveal-item">
+        <div class="cert-top"><span class="cert-issuer">Harvard / edX</span><span class="cert-status wip">⏳ In Progress</span></div>
+        <p class="cert-name">CS50P — Introduction to Python</p>
+        <p class="cert-date">Currently working through it</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="alt-section">
+  <div class="section-inner contact-inner">
+    <div class="section-tag">06 — Contact</div>
+    <h2>Let's talk ✦</h2>
+    <p class="contact-intro">I'm actively looking for internship opportunities in software development, ML, and AI. If you're working on something interesting or just want to say hi — my inbox is open. I try to respond to every message.</p>
+    <div class="contact-links">
+      <a class="contact-link reveal-item" href="mailto:deekshitha.p039@gmail.com">
+        <div class="cl-icon">✉</div>
+        <div><p class="cl-label">Email</p><p class="cl-val">deekshitha.p039@gmail.com</p></div>
+        <span class="cl-arrow">↗</span>
+      </a>
+      <a class="contact-link reveal-item" href="https://github.com/Deeksha-039" target="_blank">
+        <div class="cl-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </div>
+        <div><p class="cl-label">GitHub</p><p class="cl-val">github.com/Deeksha-039</p></div>
+        <span class="cl-arrow">↗</span>
+      </a>
+      <a class="contact-link reveal-item" href="https://www.linkedin.com/in/deekshitha-p-826456339" target="_blank">
+        <div class="cl-icon">in</div>
+        <div><p class="cl-label">LinkedIn</p><p class="cl-val">linkedin.com/in/deekshitha-p-826456339</p></div>
+        <span class="cl-arrow">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <strong>Deekshitha P</strong> — Designed & built from scratch ✦</p>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
