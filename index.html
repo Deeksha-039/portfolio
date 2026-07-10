@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deekshitha P — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="scroll-progress"></div>
+
+  <nav>
+    <div class="nav-links">
+      <a class="nav-link active" data-target="home">HOME</a>
+      <a class="nav-link" data-target="about">ABOUT</a>
+      <a class="nav-link" data-target="projects">PROJECTS</a>
+      <a class="nav-link" data-target="contact">CONTACT</a>
+      <div class="nav-pill" id="navPill"></div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-text">
+      <p class="eyebrow"><span class="rule"></span> HI, I'M</p>
+      <h1 class="hero-name">DEEKSHITHA</h1>
+      <p class="role-line"><span id="typewriter"></span><span class="cursor"></span></p>
+      <p class="hero-desc">3rd year CS student at Presidency University, Bengaluru. I build full-stack apps, train ML models, and ship things that actually work.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">VIEW MY WORK ↗</button>
+        <a class="link-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">SAY HI</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <div class="img-glow"></div>
+      <img src="assets/character.png" alt="Deekshitha P">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-left reveal">
+      <p class="eyebrow"><span class="rule"></span> 01 — ABOUT</p>
+      <h2 class="section-heading">AI & FULL-STACK<br><span class="dim">DEVELOPER.</span></h2>
+      <p class="about-desc">I'm Deekshitha P — a 3rd year CS student building at the intersection of AI and web. From medical report analyzers to autonomous browser agents, I solve real problems with clean code. Recently completed an NVIDIA × Presidency internship. Always shipping.</p>
+    </div>
+    <div class="about-right reveal">
+      <p class="label">TOOLKIT</p>
+      <div class="toolkit-grid" id="toolkitGrid"></div>
+      <p class="label" style="margin-top:2rem">EDUCATION</p>
+      <p class="edu-line">B.Tech CSE — Presidency University, Bengaluru</p>
+      <p class="edu-meta">2022 – 2026 &nbsp;·&nbsp; CGPA 7.16</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="eyebrow reveal"><span class="rule"></span> 02 — SELECTED WORK</p>
+    <h2 class="section-heading reveal">THINGS I'VE <span class="accent">BUILT.</span></h2>
+
+    <div class="projects-grid">
+
+      <div class="proj-card featured reveal">
+        <span class="proj-num">01</span>
+        <div class="proj-links">
+          <a href="https://github.com/Deeksha-039/medscan-ai" target="_blank" rel="noopener">GH ↗</a>
+          <a href="https://cheery-blancmange-f354e7.netlify.app" target="_blank" rel="noopener">LIVE ↗</a>
+        </div>
+        <h3 class="proj-title">MEDSCAN AI</h3>
+        <p class="proj-desc">Full-stack medical report analyzer built during NVIDIA × Presidency internship. Doctors upload X-rays/PDFs and get AI-generated clinical summaries. JWT auth, role-based access (Admin, Doctor, Staff), LLaMA via Groq API. Deployed on Render + Aiven MySQL + Netlify.</p>
+        <div class="proj-tags">
+          <span class="tag">FASTAPI</span>
+          <span class="tag">GROQ API</span>
+          <span class="tag">LLAMA</span>
+          <span class="tag">MYSQL</span>
+          <span class="tag">JWT</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <span class="proj-num">02</span>
+        <div class="proj-links">
+          <a href="https://github.com/Deeksha-039" target="_blank" rel="noopener">GH ↗</a>
+        </div>
+        <h3 class="proj-title">BROWSER AGENT</h3>
+        <p class="proj-desc">AI agent that autonomously navigates browsers — login flows, form filling, data extraction, multi-page workflows. LLM reasoning + Playwright for real-time control and error recovery.</p>
+        <div class="proj-tags">
+          <span class="tag">PLAYWRIGHT</span>
+          <span class="tag">BROWSER-USE</span>
+          <span class="tag">PYTHON</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <span class="proj-num">03</span>
+        <div class="proj-links">
+          <a href="https://github.com/Deeksha-039" target="_blank" rel="noopener">GH ↗</a>
+        </div>
+        <h3 class="proj-title">JOB MAILER</h3>
+        <p class="proj-desc">Automated pipeline that scrapes LinkedIn job listings by role/location/experience and delivers curated results via email. Scheduled runs, custom filters.</p>
+        <div class="proj-tags">
+          <span class="tag">PYTHON</span>
+          <span class="tag">SMTPLIB</span>
+          <span class="tag">SCRAPING</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <span class="proj-num">04</span>
+        <div class="proj-links">
+          <a href="https://github.com/Deeksha-039" target="_blank" rel="noopener">GH ↗</a>
+        </div>
+        <h3 class="proj-title">FRAUD DETECTOR</h3>
+        <p class="proj-desc">XGBoost classifier on 1.85M transactions. Fixed overfitting — fraud recall 14% → 93%. SHAP explainability, SMOTE resampling, cost-sensitive learning.</p>
+        <div class="proj-tags">
+          <span class="tag">XGBOOST</span>
+          <span class="tag">SHAP</span>
+          <span class="tag">SMOTE</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <span class="proj-num">05</span>
+        <div class="proj-links">
+          <a href="https://github.com/Deeksha-039" target="_blank" rel="noopener">GH ↗</a>
+        </div>
+        <h3 class="proj-title">AI COMPILER</h3>
+        <p class="proj-desc">Python code compiler powered by Groq API. Executes, explains, and debugs code in real time using LLaMA. Built with Streamlit, deployed on Streamlit Cloud.</p>
+        <div class="proj-tags">
+          <span class="tag">STREAMLIT</span>
+          <span class="tag">GROQ</span>
+          <span class="tag">LLAMA</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <span class="proj-num">06</span>
+        <div class="proj-links">
+          <a href="https://portfolio-sage-eta-25.vercel.app" target="_blank" rel="noopener">LIVE ↗</a>
+        </div>
+        <h3 class="proj-title">THIS PORTFOLIO</h3>
+        <p class="proj-desc">Dark developer portfolio with burgundy glow, scroll animations, and an illustrated character. Vanilla JS + CSS, no frameworks, deployed on Vercel.</p>
+        <div class="proj-tags">
+          <span class="tag">HTML/CSS/JS</span>
+          <span class="tag">VERCEL</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="eyebrow reveal"><span class="rule"></span> 03 — CONTACT</p>
+    <h2 class="section-heading reveal">LET'S MAKE<br>SOMETHING.</h2>
+    <a class="contact-email reveal" href="mailto:deekshitha.p039@gmail.com">deekshitha.p039@gmail.com</a>
+    <div class="socials reveal">
+      <a href="https://github.com/Deeksha-039" target="_blank" rel="noopener">GITHUB</a>
+      <a href="https://linkedin.com/in/deekshitha-p-826456339" target="_blank" rel="noopener">LINKEDIN</a>
+    </div>
+    <footer>© 2026 DEEKSHITHA P.</footer>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
